@@ -58,7 +58,7 @@ export default {
   }),
 
   async mounted() {
-    const response = await axios
+     await axios
       .get("https://ipapi.co/json/")
       .then((response) => {
         this.results.push({
