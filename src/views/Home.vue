@@ -61,12 +61,12 @@ export default {
      await axios
       .get("https://ipapi.co/json/")
       .then((response) => {
-        this.results.push({
-          ip: response.data.ip,
-          city: response.data.city,
-          region: response.data.region,
-          country_name: response.data.country_name,
-        });
+        
+          this.ip_address =  response.data.ip;
+          this.city = response.data.city;
+          this.region = response.data.region;
+          this.country_name = response.data.country_name;
+        
       });
     console.log(this.results);
     const res = await axios.post(
