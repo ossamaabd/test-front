@@ -1,0 +1,48 @@
+.v-tab.active-tab {
+    color: #e91e63;
+  }
+  
+  .v-tab.active-tab::before {
+    background-color: #4caf50;
+  }
+  
+  .my_image {
+    animation: my_image 3s ease-in-out;
+  }
+  
+  .icons {
+    animation: my_icons 3s ease-in-out;
+  }
+  
+  .my_button:hover {
+    transition: 0.8s;
+    transform: scale(1.07);
+  }
+  
+  .my_icon:hover {
+    transition: 0.8s;
+    transform: rotateY(359deg);
+  }
+  
+  @keyframes my_image {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  @keyframes my_icons {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  
+  
+  .v-footer {
+    width: 100%;
+    bottom: 0;
+  }
